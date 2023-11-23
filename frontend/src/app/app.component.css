@@ -1,0 +1,85 @@
+
+header {
+    background: royalblue;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+}
+.form-container {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  width: max(600px, 30%);
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-block: 1rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem 2px;
+  font-size: 1.2rem;
+}
+
+label {
+  font-size: 1.3rem;
+}
+.form-control:focus {
+  outline-color: #ccc;
+}
+
+input[type="submit"] {
+  border: none;
+  outline: none;
+  background-color: royalblue;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  font-size: 1.02rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  filter: drop-shadow(0 0 0.5em rgb(77, 107, 244));
+}
+
+.table-container {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  width: max(600px, 80%);
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+thead,
+tbody,
+tr,
+th,
+td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}

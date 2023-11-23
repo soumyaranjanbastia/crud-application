@@ -1,0 +1,58 @@
+<header><h1>Student Management System</h1></header>
+<div class="form-container">
+  <h2>Add student</h2>
+  <form #studentForm="ngForm" (submit)="onSubmit(studentForm)">
+    <div class="form-group">
+      <label>First name</label>
+      <input
+        type="text"
+        class="form-control"
+        name="firstName"
+        [(ngModel)]="student.firstName" />
+    </div>
+    <div class="form-group">
+      <label>Last name</label>
+      <input
+        type="text"
+        class="form-control"
+        name="lastName"
+        [(ngModel)]="student.lastName" />
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input
+        type="text"
+        class="form-control"
+        name="email"
+        [(ngModel)]="student.email" />
+    </div>
+
+    <input type="submit" />
+  </form>
+</div>
+
+<div class="table-container">
+  <h2>Student Lists</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tr *ngFor="let student of students">
+      <td>{{ student.id }}</td>
+      <td>{{ student.firstName }}</td>
+      <td>{{ student.lastName }}</td>
+      <td>{{ student.email }}</td>
+      <td>
+        <button title="Edit" (click)="onEdit(student.id)">✏️</button>
+        <button title="Remove" (click)="onDelete(student.id)">🗑️</button>
+      </td>
+    </tr>
+  </table>
+</div>
